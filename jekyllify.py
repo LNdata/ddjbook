@@ -11,12 +11,12 @@ short_title: {{short_title.replace(':', ' -')}}
 
 <div class='row'>
     <div class="btn-group book-nav-top span9">
-        <a class='btn' href="index.html">Home</a>
+        <a class='btn' href="index.html">Inicio</a>
         {% if parent_name %}
-            <a href="{{parent_name}}.html" class="btn">Chapter: {{parent_title}}</a>
+            <a href="{{parent_name}}.html" class="btn">Cap&iacute;tulo: {{parent_title}}</a>
         {% endif %}
         {% if next_name %}
-            <a href="{{next_name}}.html" class="btn">Next: {{next_title.rsplit('(',1)[0]}}</a>
+            <a href="{{next_name}}.html" class="btn">Siguiente: {{next_title.rsplit('(',1)[0]}}</a>
         {% endif %}
     </div>
     <div class="span3 right-align">
@@ -31,7 +31,7 @@ short_title: {{short_title.replace(':', ' -')}}
 </div>
 
 {% if children %}
-    <h3>What's in this chapter?</h3>
+    <h3>Qu&eacute; contiene este cap&iacute;tulo?</h3>
     <ul class='toc'>
         {% for c in children %}
             <li><a href="{{c.name}}.html">{{c.short_title}}</a></li>
@@ -42,10 +42,10 @@ short_title: {{short_title.replace(':', ' -')}}
 <div class="btn-group book-nav-bottom">
     <a class='btn' href="index.html">Home</a>
     {% if parent_name %}
-        <a href="{{parent_name}}.html" class="btn">Chapter: {{parent_title}}</a>
+        <a href="{{parent_name}}.html" class="btn">Cap&iacute;tulo: {{parent_title}}</a>
     {% endif %}
     {% if next_name %}
-        <a href="{{next_name}}.html" class="btn">Next: {{next_title.rsplit('(',1)[0]}}</a>
+        <a href="{{next_name}}.html" class="btn">Siguiente: {{next_title.rsplit('(',1)[0]}}</a>
     {% endif %}
 </div>
 """
