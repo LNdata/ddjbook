@@ -5,8 +5,8 @@ from jinja2 import Template, Markup
 
 SEGMENT = """---
 layout: default
-title: {{title.replace(':', '&59;')}}
-short_title: {{short_title.replace(':', ' -')}}
+title: {{title.replace(':', '&59;').replace('"','\"')}}
+short_title: {{short_title.replace(':', ' -').replace('"','\"')}}
 ---
 
 <div class='row'>
