@@ -1,9 +1,11 @@
-The Data Journalism Handbook
-============================
+Manual de Periodismo de  Datos
+==============================
 
-This repository contains the source files for the Data Journalism Handbook. The handbook was 
-started at Mozilla Festival 2011 as a collaboration between over 70 experts, coordinated by 
-the European Journalism Center and the Open Knowledge Foundation.
+Este repositorio contiene los archivos fuente del Manual de Periodismo de Datos. El manual empezó
+en el Mozilla Festival 2011 como colaboración entre 70 expertos, coordinatos por el European Journalism Center
+y la Open Knownledge Foundation.
+
+La Nación DATA patrocinó la traducción al español del Manual.
 
 How to build the DDJBook
 ------------------------
