@@ -19,30 +19,26 @@
 
         <xsl:when test="$double.sided != 0 and $sequence = 'even'
                         and $position='left'">
-           <xsl:text>This page intentionally left blank</xsl:text>
-          <!-- <fo:page-number/> -->
+          <fo:page-number/>
         </xsl:when>
 
         <xsl:when test="$double.sided != 0 and ($sequence = 'odd' or $sequence = 'first')
                         and $position='right'">
- <xsl:text>This page intentionally left blank</xsl:text>
-          <!-- <fo:page-number/> -->
+          <fo:page-number/>
         </xsl:when>
 
         <xsl:when test="$double.sided = 0 and $position='center'">
- <xsl:text>This page intentionally left blank</xsl:text>
-          <!-- <fo:page-number/> -->
+          <xsl:text>This page intentionally left blank</xsl:text>
+          <fo:page-number/>
         </xsl:when>
 
         <xsl:when test="$sequence='blank'">
           <xsl:choose>
             <xsl:when test="$double.sided != 0 and $position = 'left'">
- <xsl:text>This page intentionally left blank</xsl:text>
-              <!-- <fo:page-number/>] -->
+              <fo:page-number/>
             </xsl:when>
             <xsl:when test="$double.sided = 0 and $position = 'center'">
- <xsl:text>This page intentionally left blank</xsl:text>
-              <!-- <fo:page-number/> -->
+              <fo:page-number/>
             </xsl:when>
             <xsl:otherwise>
               <!-- nop -->
